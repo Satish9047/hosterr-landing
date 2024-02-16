@@ -11,18 +11,41 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    width: 15rem;
+    object-fit: cover;
+    width: auto;
+    &__fig {
+      .img-logo {
+        width: 5rem;
+        @include tablet {
+          width: 7rem;
+        }
+      }
+    }
+    h2 {
+      font-size: 0.7rem;
+      @include tablet {
+        font-size: 1rem;
+      }
+    }
   }
 
   &__ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1rem;
-    font-family: $font-primary;
-    font-size: 0.75rem;
+    display: none;
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 1rem;
+      font-family: $font-primary;
+      font-size: 0.75rem;
+    }
   }
 
   &__div-btn {
+    display: none;
+
     &__sign-up {
       border: none;
       background-color: inherit;
@@ -34,6 +57,21 @@
       padding: 1rem 2rem;
       background-color: $button-color;
       color: $white-text;
+    }
+
+    @include desktop {
+      display: block;
+    }
+  }
+  figure {
+    .img-menu {
+      width: 30px;
+      @include tablet {
+        width: 40px;
+      }
+      @include desktop {
+        display: none;
+      }
     }
   }
 }
