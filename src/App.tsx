@@ -1,14 +1,12 @@
 import "./App.scss";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 
   return (
-    <>
-      <div className="app">
-        <h1>Hello world</h1>
-      </div>
-
-    </>
+    <div className="app">
+      <Navbar />
+    </div>
   )
 }
 

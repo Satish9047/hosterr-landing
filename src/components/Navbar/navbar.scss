@@ -1,0 +1,39 @@
+@import "./../../styles/main.scss";
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+
+  &__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    font-family: $font-primary;
+    font-size: 0.75rem;
+  }
+
+  &__div-btn {
+    &__sign-up {
+      border: none;
+      background-color: inherit;
+      padding: 1rem 2rem;
+    }
+
+    &__wait-list {
+      border: none;
+      padding: 1rem 2rem;
+      background-color: $button-color;
+      color: $white-text;
+    }
+  }
+}
