@@ -23,15 +23,28 @@
       }
     }
     h2 {
-      font-size: 0.7rem;
+      background: linear-gradient(to right, #ffcc66, #ff6666);
+      font-size: 0.3rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      color: $white-text;
       @include tablet {
-        font-size: 1rem;
+        font-size: 0.5rem;
       }
     }
   }
 
   &__ul {
     display: none;
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        color: $button-color;
+        transition: all 0.3s ease-in-out;
+      }
+    }
 
     @include desktop {
       display: flex;
@@ -50,6 +63,10 @@
       border: none;
       background-color: inherit;
       padding: 1rem 2rem;
+      &:hover {
+        color: $button-color;
+        transition: all 0.3s ease-in-out;
+      }
     }
 
     &__wait-list {
@@ -57,21 +74,27 @@
       padding: 1rem 2rem;
       background-color: $button-color;
       color: $white-text;
+      border-radius: 5px;
+      font-family: $font-primary;
+      &:hover {
+        background-color: #0066ff;
+        transition: all 0.3s ease-in-out;
+      }
     }
 
     @include desktop {
       display: block;
     }
   }
-  figure {
+  &__fig2 {
     .img-menu {
       width: 30px;
       @include tablet {
         width: 40px;
       }
-      @include desktop {
-        display: none;
-      }
+    }
+    @include desktop {
+      display: none;
     }
   }
 }
