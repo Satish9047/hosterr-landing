@@ -1,0 +1,61 @@
+@import "../../App.scss";
+.header {
+  margin: 10vh 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 45%;
+
+    &--title {
+      font-family: $font-secondary;
+      font-size: 55px;
+    }
+  }
+
+  p {
+    color: rgb(107, 100, 100);
+  }
+
+  figure {
+    width: 50%;
+    text-align: center;
+    img {
+      width: 55%;
+    }
+  }
+}
+
+.form {
+  padding: 10px 0;
+  display: flex;
+  gap: 5px;
+  input {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+  button {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: $button-color;
+    color: $white-text;
+    border-radius: 5px;
+    font-family: $font-primary;
+    &:hover {
+      background-color: #0066ff;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
