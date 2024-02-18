@@ -3,6 +3,7 @@
   margin: 10vh 0;
   padding: 0 10%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -11,11 +12,22 @@
     display: flex;
     flex-direction: column;
     margin: 10px 0;
-    width: 45%;
+    width: 100%;
+    order: 2;
+    @include tablet {
+      width: 45%;
+    }
 
     &--title {
       font-family: $font-secondary;
-      font-size: 55px;
+      font-size: 28px;
+      @include tablet {
+        font-size: 55px;
+      }
+    }
+
+    @include tablet {
+      order: 1;
     }
   }
 
@@ -24,23 +36,41 @@
   }
 
   figure {
-    width: 50%;
     text-align: center;
+    order: 1;
     img {
-      width: 55%;
+      width: 80%;
+      @include tablet {
+        width: 55%;
+      }
     }
+    @include tablet {
+      width: 50%;
+      order: 2;
+    }
+  }
+
+  @include tablet {
+    // display: flex;
+    flex-direction: row;
   }
 }
 
 .form {
   padding: 10px 0;
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 10px;
   input {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 14px;
+    padding: 9px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+    @include tablet {
+      font-size: 18px;
+      padding: 10px;
+      width: 70%;
+    }
   }
   button {
     border: none;
@@ -52,6 +82,10 @@
     &:hover {
       background-color: #0066ff;
       transition: all 0.3s ease-in-out;
+    }
+
+    @include tablet {
+      padding: 0.2rem 1rem;
     }
   }
 
