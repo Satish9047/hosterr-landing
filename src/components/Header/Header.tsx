@@ -12,7 +12,10 @@ const Header: React.FC = () => {
                     <input placeholder='Enter e-mail address' />
                     <button>Join Waitlist</button>
                 </div>
-                <p><img />No spam, ever. Unsubscribe anytime</p>
+                <div className='header__div__sub'>
+                    <img src='/src/assets/Checkmark.svg' alt='check-mark' />
+                    <p>No spam, ever. Unsubscribe anytime</p>
+                </div>
             </div>
             <figure className=''>
                 <img src='/src/assets/Hero Image (Model).png' alt='model' />

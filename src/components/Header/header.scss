@@ -29,11 +29,20 @@
     @include tablet {
       order: 1;
     }
-  }
 
-  p {
-    color: rgb(107, 100, 100);
-    font-family: $font-primary;
+    &__sub {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p {
+        color: rgb(107, 100, 100);
+        font-family: $font-primary;
+        figure {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
   }
 
   figure {
