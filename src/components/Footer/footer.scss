@@ -1,0 +1,33 @@
+@import "../../App.scss";
+
+.footer {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+
+  &__social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      font-family: $font-primary;
+      color: rgb(107, 100, 100);
+      &:hover {
+        color: $button-color;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &__qa {
+    display: flex;
+    gap: 10px;
+
+    span {
+      font-weight: bolder;
+    }
+  }
+}
