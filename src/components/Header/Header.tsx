@@ -17,8 +17,12 @@ const Header: React.FC = () => {
                     <p>No spam, ever. Unsubscribe anytime</p>
                 </div>
             </div>
-            <figure className=''>
-                <img src='/src/assets/Hero Image (Model).png' alt='model' />
+
+            <figure className='hero'>
+                <img className='her0__img1' src='/src/assets/Hero Image (Model).png' alt='model' />
+                {/* <img className='her0__img2' src='/src/assets/Blue-Shape.svg' alt='model' />
+                <img className='her0__img3' src='/src/assets/Pink-Shape.svg' alt='model' />
+                <img className='her0__img4' src='/src/assets/Purple-Shape.svg' alt='model' /> */}
             </figure>
         </div>
     )

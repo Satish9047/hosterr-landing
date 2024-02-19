@@ -6,6 +6,8 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+  animation-name: moveToTop;
+  animation-duration: 1s;
 
   @include tablet {
     flex-direction: row;

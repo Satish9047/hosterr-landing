@@ -14,6 +14,9 @@
     margin: 10px 0;
     width: 100%;
     order: 2;
+    animation-name: moveToRight;
+    animation-duration: 1s;
+
     @include tablet {
       width: 45%;
     }
@@ -45,9 +48,12 @@
     }
   }
 
+  //stacking
   figure {
     text-align: center;
     order: 1;
+    animation-name: moveToLeft;
+    animation-duration: 1s;
     img {
       width: 80%;
       @include tablet {
@@ -101,5 +107,20 @@
 
   @include tablet {
     flex-direction: row;
+  }
+}
+
+.hero-img {
+  text-align: center;
+  order: 1;
+  img {
+    width: 80%;
+    @include tablet {
+      width: 55%;
+    }
+  }
+  @include tablet {
+    width: 50%;
+    order: 2;
   }
 }

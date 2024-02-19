@@ -14,6 +14,8 @@
     width: 15rem;
     object-fit: cover;
     width: auto;
+    animation-name: moveToRight;
+    animation-duration: 1s;
     &__fig {
       .img-logo {
         width: 5rem;
@@ -36,6 +38,8 @@
 
   &__ul {
     display: none;
+    animation-name: moveToTop;
+    animation-duration: 1s;
 
     li {
       cursor: pointer;
@@ -58,6 +62,8 @@
 
   &__div-btn {
     display: none;
+    animation-name: moveToLeft;
+    animation-duration: 1s;
 
     &__sign-up {
       border: none;
