@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 50px;
+  gap: 5rem;
   animation-name: moveToTop;
   animation-duration: 1s;
 
@@ -20,7 +20,7 @@
     gap: 20px;
 
     a {
-      font-size: 14px;
+      font-size: 1.8rem;
       text-decoration: none;
       font-family: $font-primary;
       color: rgb(107, 100, 100);
@@ -37,11 +37,13 @@
 
   &__qa {
     display: flex;
-    gap: 10px;
-    font-size: 14px;
+    gap: 1rem;
+    font-size: 2rem;
 
     span {
+      font-size: 1.7rem;
       font-weight: bolder;
+      font-family: $font-primary;
     }
     @include tablet {
       font-size: 16px;

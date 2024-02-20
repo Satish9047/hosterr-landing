@@ -18,15 +18,15 @@
     animation-duration: 1s;
     &__fig {
       .img-logo {
-        width: 5rem;
+        width: 10rem;
         @include tablet {
-          width: 7rem;
+          width: 11rem;
         }
       }
     }
     h2 {
       background: linear-gradient(to right, #ffcc66, #ff6666);
-      font-size: 0.3rem;
+      font-size: 1rem;
       padding: 0.4rem 0.8rem;
       border-radius: 20px;
       color: $white-text;

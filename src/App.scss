@@ -1,11 +1,13 @@
-// @import "./styles/variables";
-// @import "./styles/normalize";
 @import "./styles/main.scss";
+
+html {
+  font-size: 10px;
+}
 
 body {
   background-color: $background-color;
 }
 
 .app {
-  padding: 1.5rem 0rem;
+  padding: 2.4rem 0rem;
 }
