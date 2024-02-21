@@ -10,6 +10,7 @@
   animation-duration: 1s;
 
   @include tablet {
+    padding: 0 5%;
     flex-direction: row;
   }
 
@@ -17,10 +18,10 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 
     a {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       text-decoration: none;
       font-family: $font-primary;
       color: rgb(107, 100, 100);
@@ -30,7 +31,7 @@
       }
 
       @include tablet {
-        font-size: 16px;
+        font-size: 1.6rem;
       }
     }
   }
@@ -46,7 +47,7 @@
       font-family: $font-primary;
     }
     @include tablet {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
 }

@@ -6,6 +6,10 @@
   align-items: center;
   padding: 0 10%;
 
+  @include tablet {
+    padding: 0 5%;
+  }
+
   &__div {
     display: flex;
     justify-content: center;
@@ -28,10 +32,10 @@
       background: linear-gradient(to right, #ffcc66, #ff6666);
       font-size: 1rem;
       padding: 0.4rem 0.8rem;
-      border-radius: 20px;
+      border-radius: 2rem;
       color: $white-text;
       @include tablet {
-        font-size: 0.5rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -80,7 +84,7 @@
       padding: 1rem 2rem;
       background-color: $button-color;
       color: $white-text;
-      border-radius: 5px;
+      border-radius: 0.5rem;
       font-family: $font-primary;
       &:hover {
         background-color: #0066ff;
@@ -94,9 +98,9 @@
   }
   &__fig2 {
     .img-menu {
-      width: 30px;
+      width: 3rem;
       @include tablet {
-        width: 40px;
+        width: 3.8rem;
       }
     }
     @include desktop {
