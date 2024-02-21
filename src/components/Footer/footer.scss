@@ -1,7 +1,7 @@
 @import "../../App.scss";
 
 .footer {
-  padding: 0 10%;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,6 +11,11 @@
 
   @include tablet {
     padding: 0 5%;
+    flex-direction: row;
+  }
+
+  @include desktop {
+    padding: 0 10%;
     flex-direction: row;
   }
 
@@ -24,7 +29,7 @@
       font-size: 1.4rem;
       text-decoration: none;
       font-family: $font-primary;
-      color: rgb(107, 100, 100);
+      color: $gray-color;
       &:hover {
         color: $button-color;
         transition: all 0.3s ease-in-out;
