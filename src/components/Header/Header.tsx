@@ -13,7 +13,7 @@ const Header: React.FC = () => {
                     <button>Join Waitlist</button>
                 </div>
                 <div className='header__div__sub'>
-                    <img src='/src/assets/Checkmark.svg' alt='check-mark' />
+                    <img src='/images/Checkmark.svg' alt='check-mark' />
                     <p>No spam, ever. Unsubscribe anytime</p>
                 </div>
             </div>
@@ -21,10 +21,10 @@ const Header: React.FC = () => {
             <div className='image'>
                 <figure className='image__figure'>
 
-                    <img className='hero__img1' id='img1' src='/src/assets/Hero Image (Model).png' alt='model' />
-                    <img className='hero__img4' id='img2' src='/src/assets/Purple-Shape.svg' alt='model' />
-                    <img className='hero__img3' id='img3' src='/src/assets/Pink-Shape.svg' alt='model' />
-                    <img className='her0__img2' id='img4' src='/src/assets/Blue-Shape.svg' alt='model' />
+                    <img className='hero__img1' id='img1' src='/images/Hero Image (Model).png' alt='model' />
+                    <img className='hero__img4' id='img2' src='/images/Purple-Shape.svg' alt='model' />
+                    <img className='hero__img3' id='img3' src='/images/Pink-Shape.svg' alt='model' />
+                    <img className='her0__img2' id='img4' src='/images/Blue-Shape.svg' alt='model' />
 
                 </figure>
             </div>

@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
 
             <div className='footer__qa'>
                 <figure>
-                    <img src='/src/assets/Help-Avatar.svg' alt='avatar' />
+                    <img src='./images/Help-Avatar.svg' alt='avatar' />
 
                 </figure>
                 <p>Have any question?<br />

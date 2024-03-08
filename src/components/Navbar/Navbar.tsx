@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
         <div className='navbar'>
             <div className='navbar__div'>
                 <figure className='navbar__div__fig'>
-                    <img className='img-logo' src='/src/assets/Logo.svg' alt='logo' />
+                    <img className='img-logo' src='/images/Logo.svg' alt='logo' />
                 </figure>
                 <h2>Hosterr is Hiring!</h2>
             </div>
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
             </div>
 
             <figure className='navbar__fig2'>
-                <img className='img-menu' src='/src/assets/menu.svg' alt='menu' />
+                <img className='img-menu' src='/images/menu.svg' alt='menu' />
             </figure>
         </div>
     )
